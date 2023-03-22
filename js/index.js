@@ -178,8 +178,13 @@ function dataShow(table) {
               </tr>
       `;
     }
+    fieldsEdit();
   });
-  const names = document.querySelectorAll(".name-input-items");
+ 
+}
+
+function fieldsEdit(){
+   const names = document.querySelectorAll(".name-input-items");
   const nameInput = document.querySelectorAll(".name-item-input");
   const nameInputsTable = document.querySelectorAll(".name-item-input input");
   const nameEditBtnTable = document.querySelectorAll(".name-item-input button");
@@ -484,6 +489,7 @@ showSalaryBtn.addEventListener("click", () => {
       dataShow(employeeTable);
     }
   });
+  fieldsEdit();
 });
 
 //#endregion
@@ -542,6 +548,7 @@ searchBtn.addEventListener("click", (e) => {
       deletePageTable.innerHTML += searchTableCard;
     }
   });
+  fieldsEdit();
 });
 
 //#region search v2
@@ -641,6 +648,7 @@ document.querySelector("#dutyFilterBtn").addEventListener("click", (e) => {
     }
     else if (dutyFilter==="All" || dutyFilter==="none"){dataShow(employeeTable)}
   });
+  fieldsEdit();
 });
 
 //delete
