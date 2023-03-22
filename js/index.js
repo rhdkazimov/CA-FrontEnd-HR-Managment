@@ -59,6 +59,12 @@ document.querySelector("#loginBtn").addEventListener("click", (e) => {
     ) {
       loginArea.style.display="none";
       mainArea.style.display = "block";
+      const showUsarName = document.querySelector("#showUsarname")
+      const showUsarMail = document.querySelector("#showUserMail")
+      showUsarName.innerText = "Usarname:"
+      showUsarMail.innerText = "Mail:"
+      showUsarName.innerText += ` ${loginData.userName}`;
+      showUsarMail.innerText += ` ${loginData.userEmail}`;
     document.querySelector(".navbar").classList.remove("d-none");
     }
   });
@@ -658,4 +664,17 @@ document.querySelector("#delete-page button").addEventListener("click", () => {
   dataBase[deletePersonID - 1] = "";
   alert(`#${deletePersonID}-IDli insan sistemden silindi`);
   dataShow(deletePageTable);
+});
+
+
+document.querySelector("#profile").addEventListener("click", (e) => {
+  e.preventDefault();
+  document.querySelector("#profile img").classList.toggle("rotate");
+  document.querySelector(".profile-area").classList.toggle("left");
+});
+
+document.querySelector(".menu-exit").addEventListener("click", () => {
+  loginArea.style.display = "block";
+  mainArea.style.display = "none";
+  document.querySelector(".navbar").classList.add("d-none");
 });

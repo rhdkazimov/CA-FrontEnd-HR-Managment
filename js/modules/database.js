@@ -14,6 +14,13 @@ const dataBase = [
     duty: "Developer",
   },
 ];
-const loginDatas = [];
+const loginDatas = [
+  {
+    userName: "admin",
+    userTel: "0000",
+    userEmail: "hr-admin@admin.com",
+    userPassword: "admin",
+  },
+];
 
-export { dataBase,loginDatas };
+export { dataBase, loginDatas };

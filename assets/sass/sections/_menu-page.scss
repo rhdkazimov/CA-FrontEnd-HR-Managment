@@ -1,0 +1,32 @@
+.profile-area {
+    /* align-items: center; */
+    margin-top: 10px;
+    width: 300px;
+    max-width: 250px;
+    position: absolute;
+    transition: all 3s;
+    left: 0px;
+    background-color: #e7e7e7;
+    border-top-right-radius: 50px ;
+    border-bottom-right-radius: 50px;
+    box-shadow: 5px 6px 5px #2b2a
+  }
+  
+  #profile img{
+    transition: all 1.5s;
+  }
+  .rotate{
+    rotate: 180deg;
+  }
+  
+  .left{
+    left: -300px;
+  }
+  
+  
+  #showUsarname{
+  font-size: 20px;
+  }
+  #showUserMail{
+  font-size: 17px;
+  }
