@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="./js/index.js" type="module" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav
+        class="d-none navbar justify-content-between navbar-expand-lg navbar-light bg-light"
+      >
+        <div class="nav-links navbar">
+          <a class="navbar-brand" href="#"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/512/7527/7527248.png"
+              alt="icon"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#"
+                  >Ana Sehife
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Elave et</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sil</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="search-container">
+          <form class="form-inline my-2 my-lg-0">
+            <input
+              id="searchInput"
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search"
+              name="search"
+              aria-label="Search"
+            />
+            <button
+              id="searchBtn"
+              class="btn btn-lg btn-outline-success my-2 my-sm-0"
+              type="submit"
+            >
+              <i class="fa fa-search"></i>
+            </button>
+          </form>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Login Section Start -->
+      <section id="login-page">
+        <div class="container">
+          <div class="row full-height justify-content-center">
+            <div class="col-12 text-center align-self-center py-5">
+              <div class="section pb-5 pt-5 pt-sm-2 text-center">
+                <h6 class="mb-0 pb-3">
+                  <span>Log In </span><span>Sign Up</span>
+                </h6>
+                <input
+                  class="checkbox"
+                  type="checkbox"
+                  id="reg-log"
+                  name="reg-log"
+                />
+                <label for="reg-log"></label>
+                <div class="card-3d-wrap mx-auto">
+                  <div class="card-3d-wrapper">
+                    <div class="card-front">
+                      <div class="center-wrap">
+                        <div class="section text-center">
+                          <h4 class="mb-4 pb-3">Log In</h4>
+                          <div class="form-group">
+                            <input
+                            id="login-name"
+                              type="text"
+                              class="form-style"
+                              placeholder="Username"
+                            />
+                            <i class="input-icon uil uil-user"></i>
+                           
+                          </div>
+                          <div class="form-group mt-2">
+                            <input
+                            id="login-password"
+                              type="password"
+                              class="form-style"
+                              placeholder="Password"
+                            />
+                            <i class="input-icon uil uil-lock-alt"></i>
+                          </div>
+                          <button id="loginBtn" class="btn mt-4">Login</button>
+                          <p class="mb-0 mt-4 text-center">
+                            <a href="#" id="forgotpass" class="link"
+                              >Forgot your password?</a
+                            >
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-back">
+                      <div class="center-wrap">
+                        <div class="section text-center">
+                          <h4 class="mb-3 pb-3">Sign Up</h4>
+                          <div class="form-group">
+                            <input id="reg-name"
+                              type="text"
+                              class="form-style"
+                              placeholder="User Name"
+                            />
+                            <i class="input-icon uil uil-user"></i>
+                          </div>
+                          <div class="form-group mt-2">
+                            <input
+                            id="reg-tel"
+                              type="tel"
+                              class="form-style"
+                              placeholder="Phone Number"
+                            />
+                            <i class="input-icon uil uil-phone"></i>
+                          </div>
+                          <div class="form-group mt-2">
+                            <input
+                            id="reg-email"
+                              type="email"
+                              class="form-style"
+                              placeholder="Email"
+                            />
+                            <i class="input-icon uil uil-at"></i>
+                          </div>
+                          <div class="form-group mt-2">
+                            <input
+                            id="reg-password"
+                              type="password"
+                              class="form-style"
+                              placeholder="Password"
+                            />
+                            <i class="input-icon uil uil-lock-alt"></i>
+                          </div>
+                          <a id="registerBtn" href="#" class="btn mt-4"
+                            >Register</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Login Section End -->
+
+      <!-- main Section Start -->
+      <section id="main-page">
+        <div class="functions container">
+          <div class="sorts mt-3 d-flex justify-content-between">
+            <div class="name-sort">
+              <label class="font-weight-bold" for="sortName">Ad:</label>
+              <button class="btn btn-warning" id="sortName">AtoZ</button>
+            </div>
+            <div class="surname-sort">
+              <label class="font-weight-bold" for="sortSurName">Soyad :</label>
+              <button class="btn btn-warning" id="sortSurName">AtoZ</button>
+            </div>
+            <div class="salary-sort">
+              <label class="font-weight-bold" for="sortSalary">Maas :</label>
+              <button class="btn btn-warning" id="sortSalary">MaxToMin</button>
+            </div>
+            <div class="duty-sort">
+              <label class="font-weight-bold" for="sortDuty">Vezife :</label>
+              <button class="btn btn-warning" id="sortDuty">AtoZ</button>
+            </div>
+          </div>
+          <div class="filter my-3 d-flex justify-content-between">
+            <div class="dutyfilter d-flex">
+              <select name="dutyfilter" class="custom-select my-1 mr-sm-2" id="dutyfilter">
+                <option value="none" selected disabled>Please Select</option>
+                <option value="All">All</option>
+                <option value="Developer">Developer</option>
+                <option value="Tester">Tester</option>
+                <option value="ProductOwner">ProductOwner</option>
+                <option value="Manager">Manager</option>
+                <option value="Designer">Designer</option>
+              </select>
+              <button class="btn btn-outline-success" id="dutyFilterBtn">Show</button>
+            </div>
+            <div class="salaryfilter">
+              <input id="minSalaryFilter" class="rounded-left" placeholder="min" type="number" />
+              <input id="maxSalaryFilter" class="rounded-right" placeholder="max" type="number" />
+              <button id="salaryFilterBTN" class="btn btn-primary">
+                Filter
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="w-75 mx-auto">
+          <table class="table table-dark"></table>
+        </div>
+      </section>
+      <!-- main Section End -->
+
+      <!-- add Section Start -->
+      <section id="add-page">
+        <div class="container">
+          <div class="mb-3">
+            <label for="employeeName">Adı</label>
+            <input
+              type="text"
+              class="form-control"
+              productName
+              placeholder="Adı"
+              name="employeeName"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="employeeSurName">Soyadı</label>
+            <input
+              type="text"
+              class="form-control"
+              productName
+              placeholder="Soyadı"
+              name="employeeSurName"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="employeeSalary">Maaş</label>
+            <input
+              type="number"
+              class="form-control"
+              id="employeeSalary"
+              placeholder="Maaş"
+              name="employeeSalary"
+            />
+          </div>
+          <div class="mb-3">
+            <label>Vezifesi</label>
+            <select name="employeeDuty" class="custom-select my-1 mr-sm-2" id="employeeDuty">
+              <option value="none" selected disabled>Please Select</option>
+              <option value="Developer">Developer</option>
+              <option value="Tester">Tester</option>
+              <option value="ProductOwner">ProductOwner</option>
+              <option value="Manager">Manager</option>
+              <option value="Designer">Designer</option>
+            </select>
+          </div>
+          <button id="employeeAddBtn" class="btn btn-primary">Əlavə et</button>
+        </div>
+      </section>
+      <!-- add Section End -->
+
+      <!-- delete Section Start -->
+      <section id="delete-page">
+        <div class="container">
+          <label for="deletePersonId">Silmek : </label>
+          <input
+            type="number"
+            id="deletePersonId"
+            placeholder="#Id qeyd edin "
+            class=""
+          />
+          <button class="btn btn-danger">SIL</button>
+        </div>
+        <div class="w-75 mx-auto">
+          <table class="table table-dark"></table>
+        </div>
+      </section>
+      <!-- delete Section End -->
+    </main>
+  </body>
+</html>
