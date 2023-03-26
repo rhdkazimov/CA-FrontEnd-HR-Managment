@@ -1,20 +1,10 @@
 @import './sections/login-page';
 @import './sections/menu-page';
-
-header {
-    img{
-        width: 50px;
-    }
-}
+@import './sections/header';
+@import './sections/navbar';
+@import './sections/search';
 
 #add-page,#main-page,#delete-page{
     display: none;
 }
 
-#searchInput{
-    font-size: 25px;
-}
-
-.navbar {
-    font-size: 30px;
-}

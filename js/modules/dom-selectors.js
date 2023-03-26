@@ -10,7 +10,7 @@ const deletePageTable = document.querySelector("#delete-page table");
 const employeeTable = document.querySelector("#main-page table");
 const deletePage = document.querySelector("#delete-page");
 let addEmployee = document.querySelectorAll("#add-page input");
-const AddBtn = document.querySelector("#employeeAddBtn");
+const addBtn = document.querySelector("#employeeAddBtn");
 const sortName = document.querySelector("#sortName");
 const sortSurName = document.querySelector("#sortSurName");
 const sortSalary = document.querySelector("#sortSalary");
@@ -39,7 +39,7 @@ export {
   employeeTable,
   deletePage,
   addEmployee,
-  AddBtn,
+  addBtn,
   sortName,
   sortSurName,
   sortSalary,
